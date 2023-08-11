@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* Navbar Section */
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 20px;
+    color: whitesmoke;
+}
+
+.nav-links {
+    display: flex;
+    /* text-decoration: none; */
+    list-style: none;
+    align-items: center;
+}
+
+.active {
+    color: #fc036b;
+    font-weight: bold;
+}
+
+.nav-links li {
+    text-decoration: none;
+    /* background-color: aquamarine; */
+    margin: 0px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Header Section */
+
+.head {
+    background: url('img/header-bg.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.head h2 {
+    /* background-color: blueviolet; */
+    /* border: 2px solid black; */
+    padding: 5px 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+.line {
+    width: 200px;
+    background-color: #fc036b;
+    height: 4px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.head h1 {
+    /* background-color: blueviolet; */
+    /* border: 2px solid black; */
+    padding: 0px 10px;
+    font-size: 75px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #fc036b;
+    /* border: 2px solid black; */
+    border: none;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Events Section */
+.events {
+    /* background-color: red; */
+    margin-top: 100px;
+}
+
+.title {
+    /* background-color: aquamarine; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #484872;
+    word-spacing: 10px;
+}
+
+.title .line {
+    width: 150px;
+    background-color: #fc036b;
+    height: 4px;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+
+.row {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.col {
+    text-align: center;
+}
+
+.col img {
+    width: 70%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.col h4 {
+    /* background-color: aquamarine; */
+    font-size: 35px;
+    margin: 20px 0px;
+    color: #484872;
+}
+
+.col p {
+    /* background-color: bisque; */
+    padding: 0px 40px;
+    color: #484872;
+}
+
+.col .btn {
+    margin-top: 10px;
+}
+
+.explore {
+    background: url('img/bg2.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.explore-content {
+    /* background-color: blueviolet; */
+    width: 50%;
+    padding: 100px;
+}
+
+.explore-content h1{
+    word-spacing: 10px;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.explore-content .line {
+    width: 200px;
+    background-color: #fc036b;
+    height: 4px;
+    border-radius: 10px;
+    margin: 0px 120px;
+    margin-bottom: 60px;
+}
+
+.explore-content p{
+    font-size: 25px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+
+/* Mobile Device */
+@media only screen and (max-width:850px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #484872;
+        margin-top: -2000px;
+        transition: 0.5s;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .nav-links li {
+        margin: 30px 0px;
+    }
+
+}
